@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="it" data-promo-scadenza="2026-11-30T23:59:59+01:00" data-promo-stato="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ether Motion — spot, reel e film per brand</title>
+  <meta name="description" content="Spot, reel e film per brand, con la qualità di una troupe intera. Progetti originali realizzati con AI e strumenti professionali.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0B0B0C">
+  <link rel="icon" type="image/png" sizes="32x32" href="/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/brand/favicon-64.png">
+  <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/satoshi-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <script>
+    // Le entrate animate esistono solo con JavaScript. Se lo script principale non parte entro
+    // 10 secondi, la pagina torna statica e tutto resta leggibile.
+    document.documentElement.classList.add('js');
+    setTimeout(function () { if (!window.__emReady) document.documentElement.classList.remove('js'); }, 10000);
+    // La partenza 3-2-1: solo alla prima visita della sessione, mai con movimento ridotto; dura al più 1,5 s dall'inizio della
+    // navigazione (l'animazione parte già avanzata di quanto l'HTML ha tardato) e la tolgono questo timer, un tocco o un tasto,
+    // anche se lo script principale non è ancora arrivato. Se il browser nega l'archivio di sessione, non c'è.
+    try {
+      if (!sessionStorage.getItem('em-partenza') && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        sessionStorage.setItem('em-partenza', '1');
+        var h = document.documentElement, da = performance.now(), via = function () { h.classList.remove('in-partenza'); };
+        h.style.setProperty('--partenza-da', -Math.round(da) + 'ms');
+        h.classList.add('in-partenza');
+        setTimeout(via, Math.max(0, 1500 - da));
+        addEventListener('pointerdown', via, { once: true, passive: true });
+        addEventListener('keydown', via, { once: true });
+      }
+    } catch (e) {}
+  </script>
+  <script type="module" crossorigin src="/assets/main-Bg7CbmRp.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/mirino-BRYz25VP.js">
+  <link rel="stylesheet" crossorigin href="/assets/mirino-BqimNqGS.css">
+  <link rel="stylesheet" crossorigin href="/assets/main-CqHglRDa.css">
+</head>
+<body>
+  <!-- La coda di inizio pellicola (P6): la mostra la classe `in-partenza` su <html>, messa dallo script nel <head>; senza, resta nascosta. -->
+  <div class="partenza" aria-hidden="true" hidden>
+    <p class="label partenza__scritta partenza__scritta--alto">Testa · Bobina 01</p>
+    <div class="partenza__quadro">
+      <span class="partenza__anello"></span>
+      <span class="partenza__lancetta"></span>
+      <span class="partenza__cifra">3</span><span class="partenza__cifra">2</span><span class="partenza__cifra">1</span>
+    </div>
+    <p class="label partenza__scritta partenza__scritta--basso">Ether Motion</p>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+  <button class="hint" id="hint" type="button" aria-hidden="true" tabindex="-1" hidden>Scorri <span aria-hidden="true">↓</span></button>
+  <a class="skip" href="#lavoro">Vai ai lavori</a>
+
+  <header class="masthead">
+    <a class="brand" href="#apertura" aria-label="Ether Motion, torna all'inizio">
+      <img class="brand__logo" src="/brand/logo.png" alt="Ether Motion" width="90" height="64">
+    </a>
+    <nav class="masthead__nav" aria-label="Pagine">
+      <a class="masthead__cta" href="/prezzi/"><span data-promo="on">Promo novembre</span><span data-promo="over">Prezzi</span></a>
+      <a class="masthead__cta" href="#contatto">Scrivici</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="opener" id="apertura" aria-labelledby="opener-title">
+      <div class="opener__media" aria-hidden="true">
+  <picture><source media="(min-width: 900px)" srcset="/media/almere/poster-lg.jpg"><img class="opener__poster" src="/media/almere/poster-sm.jpg" alt="" fetchpriority="high" decoding="async"></picture>
+  <video class="opener__video" muted loop playsinline preload="none" data-src="/media/almere/loop-sm.mp4" data-src-hd="/media/almere/loop-lg.mp4"></video>
+</div>
+      <div class="opener__copy">
+        <h1 class="title opener__title reveal" id="opener-title"><span class="line"><span>Spot, reel e film per brand.</span></span></h1>
+        <p class="lead opener__lead">Con la qualità di una troupe intera.</p>
+        <a class="button opener__play" href="/media/almere/film-sm.mp4" data-play="almere" data-title="Profumo">Guarda lo spot del profumo</a>
+      </div>
+      <div class="cue" aria-hidden="true"><span class="cue__txt label">Scorri</span><span class="arrows"><svg viewBox="0 0 28 12"><path d="M2 2l12 8 12-8"/></svg><svg viewBox="0 0 28 12"><path d="M2 2l12 8 12-8"/></svg><svg viewBox="0 0 28 12"><path d="M2 2l12 8 12-8"/></svg></span></div>
+    </section>
+
+    <section class="set" id="set" aria-labelledby="set-title">
+      <div class="set__pin">
+        <div class="set__stage" data-intro="0,4" data-close="33.4,37.5" aria-hidden="true">
+  <video class="set__video" muted playsinline preload="none" disablepictureinpicture disableremoteplayback data-src-journey="/media/_viaggio/viaggio-sm.mp4" data-src-journey-hd="/media/_viaggio/viaggio-lg.mp4"></video>
+</div>
+        <header class="set__intro">
+          <p class="label">La troupe</p>
+          <h2 class="title reveal" id="set-title"><span class="line"><span>Dietro ogni film</span></span><span class="line"><span>c'è una troupe.</span></span></h2>
+        </header>
+        <ol class="stations">
+          <li class="station" id="postazione-regia" data-station="regia" data-at="7.6,10.6">
+  <div class="station__head">
+    <p class="label station__n"><span class="station__lamp" aria-hidden="true"></span>01 / 06</p>
+    <h3 class="station__title reveal"><span class="line"><span>Regia</span></span></h3>
+    <p class="station__line">Ogni film parte da un piano: le scene, il loro ordine, un&#39;immagine per ognuna.</p>
+  </div>
+  <figure class="artifact artifact--image"><picture><source media="(min-width: 900px)" srcset="/stations/regia-lg.jpg"><img src="/stations/regia-sm.jpg" alt="Foglio con sei immagini chiave dello spot del profumo, numerate con la scena: il velo, l&#39;auto di notte, la donna in città, la svolta, la pelle, il flacone." style="aspect-ratio: 8 / 5" loading="lazy" decoding="async"></picture><figcaption class="artifact__caption">Lo spot del profumo è fatto di dodici scene, ognuna con la sua immagine chiave. Qui sei, nell&#39;ordine del film.</figcaption></figure>
+</li>
+<li class="station" id="postazione-casting" data-station="casting" data-at="11,13.4">
+  <div class="station__head">
+    <p class="label station__n"><span class="station__lamp" aria-hidden="true"></span>02 / 06</p>
+    <h3 class="station__title reveal"><span class="line"><span>Casting</span></span></h3>
+    <p class="station__line">Un volto, sempre lo stesso, in ogni scena in cui compare.</p>
+  </div>
+  <figure class="artifact artifact--image"><picture><source media="(min-width: 900px)" srcset="/stations/casting-lg.jpg"><img src="/stations/casting-sm.jpg" alt="Scheda della modella dello spot del profumo: figura intera di fronte e di spalle in un abito nero, e il primo piano del volto." style="aspect-ratio: 3 / 2" loading="lazy" decoding="async"></picture><figcaption class="artifact__caption">La modella dello spot del profumo in tre viste: di fronte, di spalle, il volto.</figcaption></figure>
+</li>
+<li class="station" id="postazione-scenografia" data-station="scenografia" data-at="15,18">
+  <div class="station__head">
+    <p class="label station__n"><span class="station__lamp" aria-hidden="true"></span>03 / 06</p>
+    <h3 class="station__title reveal"><span class="line"><span>Scenografia e prodotto</span></span></h3>
+    <p class="station__line">Luoghi, oggetti e packaging disegnati da zero.</p>
+  </div>
+  <figure class="artifact artifact--image"><picture><source media="(min-width: 900px)" srcset="/stations/scenografia-lg.jpg"><img src="/stations/scenografia-sm.jpg" alt="Il flacone di profumo ripreso di fronte, squadrato, col tappo metallico e il nome inciso, fra due quinte nere." style="aspect-ratio: 43 / 24" loading="lazy" decoding="async"></picture><ul class="artifact__lines"><li>testo ALMÈRE · dichiarato: esatto · misurato: esatto, accento grave incluso · passa</li><li>tappo ÷ altezza totale · dichiarato 0,22 · misurato 0,241 · passa</li><li>La tolleranza non si sposta dopo.</li></ul><figcaption class="artifact__caption">Il flacone dello spot in ripresa frontale: su questo file sono state misurate le sue proporzioni, in pixel.</figcaption></figure>
+</li>
+<li class="station" id="postazione-fotografia" data-station="fotografia" data-at="19,22">
+  <div class="station__head">
+    <p class="label station__n"><span class="station__lamp" aria-hidden="true"></span>04 / 06</p>
+    <h3 class="station__title reveal"><span class="line"><span>Fotografia</span></span></h3>
+    <p class="station__line">Ogni inquadratura nasce da un&#39;immagine chiave: luce, obiettivo, composizione.</p>
+  </div>
+  <figure class="artifact artifact--pair" style="--ratio: 16 / 9"><div class="pair"><div class="pair__shot pair__shot--before"><picture><source media="(min-width: 900px)" srcset="/stations/fotografia-kf-lg.jpg"><img src="/stations/fotografia-kf-sm.jpg" alt="Immagine chiave della scena 12: il flacone sul piano lucido, con la luce che arriva di lato." style="aspect-ratio: 16 / 9" loading="lazy" decoding="async"></picture><span class="label pair__label">Immagine chiave</span></div><div class="pair__shot pair__shot--after"><picture><source media="(min-width: 900px)" srcset="/stations/fotografia-film-lg.jpg"><img src="/stations/fotografia-film-sm.jpg" alt="Fotogramma del film: la stessa inquadratura, il flacone sul piano scuro illuminato di lato." style="aspect-ratio: 16 / 9" loading="lazy" decoding="async"></picture><span class="label pair__label">Nel film</span></div></div><figcaption class="artifact__caption">Lo spot del profumo: l&#39;immagine chiave della scena 12 e la stessa inquadratura nel film finito.</figcaption></figure>
+</li>
+<li class="station" id="postazione-montaggio" data-station="montaggio" data-at="23.2,25.8">
+  <div class="station__head">
+    <p class="label station__n"><span class="station__lamp" aria-hidden="true"></span>05 / 06</p>
+    <h3 class="station__title reveal"><span class="line"><span>Montaggio</span></span></h3>
+    <p class="station__line">Stacchi scelti fotogramma per fotogramma.</p>
+  </div>
+  <figure class="artifact artifact--strip"><ol class="strip"><li><img src="/stations/montaggio-1-sm.jpg" alt="Fotogramma: S02 SILK/WIND · 2,375 s" style="aspect-ratio: 16 / 9" loading="lazy" decoding="async"><span class="label">S02 SILK/WIND · 2,375 s</span></li><li><img src="/stations/montaggio-2-sm.jpg" alt="Fotogramma: S03 WATER/IMPACT · 3,417 s" style="aspect-ratio: 16 / 9" loading="lazy" decoding="async"><span class="label">S03 WATER/IMPACT · 3,417 s</span></li><li><img src="/stations/montaggio-3-sm.jpg" alt="Fotogramma: S04 NIGHT DRIVE · 4,583 s" style="aspect-ratio: 16 / 9" loading="lazy" decoding="async"><span class="label">S04 NIGHT DRIVE · 4,583 s</span></li><li><img src="/stations/montaggio-4-sm.jpg" alt="Fotogramma: S07 BOTTLE REVEAL · 9,167 s" style="aspect-ratio: 16 / 9" loading="lazy" decoding="async"><span class="label">S07 BOTTLE REVEAL · 9,167 s</span></li><li><img src="/stations/montaggio-5-sm.jpg" alt="Fotogramma: S10 THE RELEASE · 13,125 s" style="aspect-ratio: 16 / 9" loading="lazy" decoding="async"><span class="label">S10 THE RELEASE · 13,125 s</span></li><li><img src="/stations/montaggio-6-sm.jpg" alt="Fotogramma: S12 ALMERE HERO · 17,250 s" style="aspect-ratio: 16 / 9" loading="lazy" decoding="async"><span class="label">S12 ALMERE HERO · 17,250 s</span></li></ol><ul class="artifact__lines"><li>Dodici scene e il cartello finale, coi tagli esatti al fotogramma.</li><li>La scena 2 dura 25 fotogrammi: poco più di un secondo.</li><li>Il montaggio è uno script: rilanciato, ricostruisce la stessa timeline.</li></ul><figcaption class="artifact__caption">Lo spot del profumo: sei dei dodici stacchi, coi tempi del progetto di montaggio in DaVinci Resolve.</figcaption></figure>
+</li>
+<li class="station" id="postazione-suono" data-station="suono" data-at="28,30.4">
+  <div class="station__head">
+    <p class="label station__n"><span class="station__lamp" aria-hidden="true"></span>06 / 06</p>
+    <h3 class="station__title reveal"><span class="line"><span>Suono</span></span></h3>
+    <p class="station__line">Musica, atmosfera e suoni di scena, ognuno sulla sua traccia.</p>
+  </div>
+  <figure class="artifact artifact--image"><picture><source media="(min-width: 900px)" srcset="/stations/suono-lg.jpg"><img src="/stations/suono-sm.jpg" alt="Forma d&#39;onda dell&#39;audio dello spot del profumo." style="aspect-ratio: 5 / 1" loading="lazy" decoding="async"></picture><ul class="artifact__lines"><li>A1 · la musica, sotto a tutto, dal primo fotogramma</li><li>A2 · un solo suono d&#39;atmosfera, per la scena 1</li><li>A3 · l&#39;audio nato con le clip, su tutte e dodici le scene, in sync</li></ul><figcaption class="artifact__caption">La forma d&#39;onda del mix dello spot del profumo, calcolata dal film; le tracce, dal progetto di montaggio.</figcaption></figure>
+</li>
+        </ol>
+        <div class="set__close">
+          <h2 class="title reveal"><span class="line"><span>Una troupe intera,</span></span><span class="line"><span><em>a tua disposizione.</em></span></span></h2>
+        </div>
+        <div class="set__cue" aria-hidden="true"><div class="rail"><i class="rail__fill"></i><b></b><b></b><b></b><b></b><b></b><b></b></div><span class="cue__txt label">Scorri</span></div>
+      </div>
+    </section>
+
+    <section class="titles" id="gancio" aria-labelledby="titles-title">
+      <div class="titles__pin">
+        <div class="titles__stage" data-seg="4" aria-hidden="true">
+  <video class="titles__video" muted playsinline preload="none" disablepictureinpicture disableremoteplayback data-src-titles="/media/_titoli/titoli-sm.mp4" data-src-titles-hd="/media/_titoli/titoli-lg.mp4"></video>
+  <div class="titles__mask"><span class="titles__word">Profumo</span><span class="titles__word">Bevanda</span><span class="titles__word">Automotive</span><span class="titles__word">Pelletteria</span><span class="titles__word">Sport</span><span class="titles__word">Gelato</span><span class="titles__word">Food</span><span class="titles__word">Skincare</span><span class="titles__word">Tè freddo</span><span class="titles__word">Energy drink</span></div>
+  <div class="titles__outline"><span class="titles__word">Profumo</span><span class="titles__word">Bevanda</span><span class="titles__word">Automotive</span><span class="titles__word">Pelletteria</span><span class="titles__word">Sport</span><span class="titles__word">Gelato</span><span class="titles__word">Food</span><span class="titles__word">Skincare</span><span class="titles__word">Tè freddo</span><span class="titles__word">Energy drink</span></div>
+  <div class="titles__caps"><div class="titles__cap"><span class="label"><b>01</b> · spot di prodotto</span><span class="titles__gap"></span><span class="titles__light"></span></div><div class="titles__cap"><span class="label"><b>02</b> · spot di prodotto</span><span class="titles__gap"></span><span class="titles__light"></span></div><div class="titles__cap"><span class="label"><b>03</b> · spot di prodotto</span><span class="titles__gap"></span><span class="titles__light"></span></div><div class="titles__cap"><span class="label"><b>04</b> · spot di prodotto</span><span class="titles__gap"></span><span class="titles__light"></span></div><div class="titles__cap"><span class="label"><b>05</b> · spot di prodotto</span><span class="titles__gap"></span><span class="titles__light"></span></div><div class="titles__cap"><span class="label"><b>06</b> · spot di prodotto</span><span class="titles__gap"></span><span class="titles__light"></span></div><div class="titles__cap"><span class="label"><b>07</b> · spot di prodotto</span><span class="titles__gap"></span><span class="titles__light"></span></div><div class="titles__cap"><span class="label"><b>08</b> · spot di prodotto</span><span class="titles__gap"></span><span class="titles__light"></span></div><div class="titles__cap"><span class="label"><b>09</b> · spot di prodotto</span><span class="titles__gap"></span><span class="titles__light"></span></div><div class="titles__cap"><span class="label"><b>10</b> · spot di prodotto</span><span class="titles__gap"></span><span class="titles__light"></span></div></div>
+</div>
+<h2 class="titles__open" id="titles-title"><span class="titles__brand">Ether Motion</span> <em>presenta</em></h2>
+<div class="titles__end">
+  <ol class="titles__credits"><li><span class="label">spot di prodotto</span><b>Profumo</b></li><li><span class="label">spot di prodotto</span><b>Bevanda</b></li><li><span class="label">spot di prodotto</span><b>Automotive</b></li><li><span class="label">spot di prodotto</span><b>Pelletteria</b></li><li><span class="label">spot di prodotto</span><b>Sport</b></li><li><span class="label">spot di prodotto</span><b>Gelato</b></li><li><span class="label">spot di prodotto</span><b>Food</b></li><li><span class="label">spot di prodotto</span><b>Skincare</b></li><li><span class="label">spot di prodotto</span><b>Tè freddo</b></li><li><span class="label">spot di prodotto</span><b>Energy drink</b></li></ol>
+  <p class="titles__closing">Dieci marchi. <em>Tutti inventati da noi.</em></p>
+</div>
+      </div>
+    </section>
+
+    <section class="works lavori" id="lavoro" aria-labelledby="works-title" data-vista="indice" data-filtro="tutto">
+      <header class="works__head lavori__testa">
+        <p class="label">Il lavoro</p>
+        <h2 class="title reveal" id="works-title"><span class="line"><span>Progetti originali.</span></span><span class="line"><span><em>Tutti nostri.</em></span></span></h2>
+        <div class="filters lavori__filtro" role="group" aria-label="Filtra i lavori" hidden>
+          <button class="chip" type="button" data-filtro="tutto" aria-pressed="true">Tutto</button>
+          <button class="chip" type="button" data-filtro="pubblicita" aria-pressed="false">Pubblicità</button>
+          <button class="chip" type="button" data-filtro="cinema" aria-pressed="false">Cinematografico</button>
+          <button class="chip" type="button" data-filtro="reel" aria-pressed="false">Reel</button>
+        </div>
+        <div class="lavori__interruttore" role="group" aria-label="Come vedere i lavori" hidden>
+          <button type="button" data-vista-btn="indice" aria-pressed="true">Indice</button>
+          <button type="button" data-vista-btn="rullo" aria-pressed="false">Rullo</button>
+        </div>
+      </header>
+      <div class="lavori__indice"></div>
+      <div class="lavori__rullo"></div>
+      <!-- La griglia di sempre: resta per chi non ha JavaScript e finché la parte dei lavori non si è montata. -->
+      <div class="works__grid">
+        <article class="work" id="lavoro-almere" data-family="pubblicita" data-aspect="16:9">
+  <a class="work__media" href="/media/almere/film-sm.mp4" data-play="almere" data-title="Profumo" aria-label="Guarda Profumo con audio">
+    <picture><source media="(min-width: 900px)" srcset="/media/almere/poster-lg.jpg"><img class="work__poster" src="/media/almere/poster-sm.jpg" alt="" loading="lazy" decoding="async"></picture>
+    <video class="work__loop" muted loop playsinline preload="none" data-src="/media/almere/loop-sm.mp4" data-src-hd="/media/almere/loop-lg.mp4" aria-hidden="true"></video>
+    <span class="work__cue label">Guarda con audio</span>
+  </a>
+  <div class="work__meta">
+    <p class="label work__kind">Pubblicità · spot di prodotto</p>
+    <h3 class="work__title">Profumo</h3>
+    <p class="work__line">Vetro, luce e notte: un profumo raccontato come un film.</p>
+    <p class="work__note">Progetto originale · realizzato con AI</p>
+  </div>
+</article>
+<article class="work" id="lavoro-bun" data-family="pubblicita" data-aspect="16:9">
+  <a class="work__media" href="/media/bun/film-sm.mp4" data-play="bun" data-title="Food" aria-label="Guarda Food con audio">
+    <picture><source media="(min-width: 900px)" srcset="/media/bun/poster-lg.jpg"><img class="work__poster" src="/media/bun/poster-sm.jpg" alt="" loading="lazy" decoding="async"></picture>
+    <video class="work__loop" muted loop playsinline preload="none" data-src="/media/bun/loop-sm.mp4" data-src-hd="/media/bun/loop-lg.mp4" aria-hidden="true"></video>
+    <span class="work__cue label">Guarda con audio</span>
+  </a>
+  <div class="work__meta">
+    <p class="label work__kind">Pubblicità · spot di prodotto</p>
+    <h3 class="work__title">Food</h3>
+    <p class="work__line">Calore, consistenza, morso.</p>
+    <p class="work__note">Progetto originale · realizzato con AI</p>
+  </div>
+</article>
+<article class="work" id="lavoro-volt" data-family="pubblicita" data-aspect="16:9">
+  <a class="work__media" href="/media/volt/film-sm.mp4" data-play="volt" data-title="Energy drink" aria-label="Guarda Energy drink con audio">
+    <picture><source media="(min-width: 900px)" srcset="/media/volt/poster-lg.jpg"><img class="work__poster" src="/media/volt/poster-sm.jpg" alt="" loading="lazy" decoding="async"></picture>
+    <video class="work__loop" muted loop playsinline preload="none" data-src="/media/volt/loop-sm.mp4" data-src-hd="/media/volt/loop-lg.mp4" aria-hidden="true"></video>
+    <span class="work__cue label">Guarda con audio</span>
+  </a>
+  <div class="work__meta">
+    <p class="label work__kind">Pubblicità · spot di prodotto</p>
+    <h3 class="work__title">Energy drink</h3>
+    <p class="work__line">Un gesto, un lampo, il marchio.</p>
+    <p class="work__note">Progetto originale · realizzato con AI</p>
+  </div>
+</article>
+<article class="work" id="lavoro-noirleaf" data-family="pubblicita" data-aspect="16:9">
+  <a class="work__media" href="/media/noirleaf/film-sm.mp4" data-play="noirleaf" data-title="Tè freddo" aria-label="Guarda Tè freddo con audio">
+    <picture><source media="(min-width: 900px)" srcset="/media/noirleaf/poster-lg.jpg"><img class="work__poster" src="/media/noirleaf/poster-sm.jpg" alt="" loading="lazy" decoding="async"></picture>
+    <video class="work__loop" muted loop playsinline preload="none" data-src="/media/noirleaf/loop-sm.mp4" data-src-hd="/media/noirleaf/loop-lg.mp4" aria-hidden="true"></video>
+    <span class="work__cue label">Guarda con audio</span>
+  </a>
+  <div class="work__meta">
+    <p class="label work__kind">Pubblicità · spot di prodotto</p>
+    <h3 class="work__title">Tè freddo</h3>
+    <p class="work__line">Cinque gusti, una terrazza, un&#39;estate.</p>
+    <p class="work__note">Progetto originale · realizzato con AI</p>
+  </div>
+</article>
+<article class="work" id="lavoro-vanta" data-family="pubblicita" data-aspect="16:9">
+  <a class="work__media" href="/media/vanta/film-sm.mp4" data-play="vanta" data-title="Sport" aria-label="Guarda Sport con audio">
+    <picture><source media="(min-width: 900px)" srcset="/media/vanta/poster-lg.jpg"><img class="work__poster" src="/media/vanta/poster-sm.jpg" alt="" loading="lazy" decoding="async"></picture>
+    <video class="work__loop" muted loop playsinline preload="none" data-src="/media/vanta/loop-sm.mp4" data-src-hd="/media/vanta/loop-lg.mp4" aria-hidden="true"></video>
+    <span class="work__cue label">Guarda con audio</span>
+  </a>
+  <div class="work__meta">
+    <p class="label work__kind">Pubblicità · spot di prodotto</p>
+    <h3 class="work__title">Sport</h3>
+    <p class="work__line">Una corsa all&#39;alba, e il motivo per farne un&#39;altra.</p>
+    <p class="work__note">Progetto originale · realizzato con AI</p>
+  </div>
+</article>
+<article class="work" id="lavoro-nova" data-family="pubblicita" data-aspect="16:9">
+  <a class="work__media" href="/media/nova/film-sm.mp4" data-play="nova" data-title="Automotive" aria-label="Guarda Automotive con audio">
+    <picture><source media="(min-width: 900px)" srcset="/media/nova/poster-lg.jpg"><img class="work__poster" src="/media/nova/poster-sm.jpg" alt="" loading="lazy" decoding="async"></picture>
+    <video class="work__loop" muted loop playsinline preload="none" data-src="/media/nova/loop-sm.mp4" data-src-hd="/media/nova/loop-lg.mp4" aria-hidden="true"></video>
+    <span class="work__cue label">Guarda con audio</span>
+  </a>
+  <div class="work__meta">
+    <p class="label work__kind">Pubblicità · spot di prodotto</p>
+    <h3 class="work__title">Automotive</h3>
+    <p class="work__line">Dalla città bagnata alla montagna, all&#39;alba.</p>
+    <p class="work__note">Progetto originale · realizzato con AI</p>
+  </div>
+</article>
+<article class="work" id="lavoro-agru" data-family="pubblicita" data-aspect="9:16">
+  <a class="work__media" href="/media/agru/film-sm.mp4" data-play="agru" data-title="Bevanda" aria-label="Guarda Bevanda con audio">
+    <picture><source media="(min-width: 900px)" srcset="/media/agru/poster-lg.jpg"><img class="work__poster" src="/media/agru/poster-sm.jpg" alt="" loading="lazy" decoding="async"></picture>
+    <video class="work__loop" muted loop playsinline preload="none" data-src="/media/agru/loop-sm.mp4" data-src-hd="/media/agru/loop-lg.mp4" aria-hidden="true"></video>
+    <span class="work__cue label">Guarda con audio</span>
+  </a>
+  <div class="work__meta">
+    <p class="label work__kind">Pubblicità · spot di prodotto</p>
+    <h3 class="work__title">Bevanda</h3>
+    <p class="work__line">Una lattina, il ghiaccio, il mare.</p>
+    <p class="work__note">Progetto originale · realizzato con AI</p>
+  </div>
+</article>
+<article class="work" id="lavoro-terrana" data-family="pubblicita" data-aspect="9:16">
+  <a class="work__media" href="/media/terrana/film-sm.mp4" data-play="terrana" data-title="Pelletteria" aria-label="Guarda Pelletteria con audio">
+    <picture><source media="(min-width: 900px)" srcset="/media/terrana/poster-lg.jpg"><img class="work__poster" src="/media/terrana/poster-sm.jpg" alt="" loading="lazy" decoding="async"></picture>
+    <video class="work__loop" muted loop playsinline preload="none" data-src="/media/terrana/loop-sm.mp4" data-src-hd="/media/terrana/loop-lg.mp4" aria-hidden="true"></video>
+    <span class="work__cue label">Guarda con audio</span>
+  </a>
+  <div class="work__meta">
+    <p class="label work__kind">Pubblicità · spot di prodotto</p>
+    <h3 class="work__title">Pelletteria</h3>
+    <p class="work__line">La pelle si apre, si ricompone e resta.</p>
+    <p class="work__note">Progetto originale · realizzato con AI</p>
+  </div>
+</article>
+<article class="work" id="lavoro-verdea" data-family="pubblicita" data-aspect="9:16">
+  <a class="work__media" href="/media/verdea/film-sm.mp4" data-play="verdea" data-title="Gelato" aria-label="Guarda Gelato con audio">
+    <picture><source media="(min-width: 900px)" srcset="/media/verdea/poster-lg.jpg"><img class="work__poster" src="/media/verdea/poster-sm.jpg" alt="" loading="lazy" decoding="async"></picture>
+    <video class="work__loop" muted loop playsinline preload="none" data-src="/media/verdea/loop-sm.mp4" data-src-hd="/media/verdea/loop-lg.mp4" aria-hidden="true"></video>
+    <span class="work__cue label">Guarda con audio</span>
+  </a>
+  <div class="work__meta">
+    <p class="label work__kind">Pubblicità · spot di prodotto</p>
+    <h3 class="work__title">Gelato</h3>
+    <p class="work__line">Pistacchio vero, in riva al mare.</p>
+    <p class="work__note">Progetto originale · realizzato con AI</p>
+  </div>
+</article>
+<article class="work" id="lavoro-luvia" data-family="pubblicita" data-aspect="9:16">
+  <a class="work__media" href="/media/luvia/film-sm.mp4" data-play="luvia" data-title="Skincare" aria-label="Guarda Skincare con audio">
+    <picture><source media="(min-width: 900px)" srcset="/media/luvia/poster-lg.jpg"><img class="work__poster" src="/media/luvia/poster-sm.jpg" alt="" loading="lazy" decoding="async"></picture>
+    <video class="work__loop" muted loop playsinline preload="none" data-src="/media/luvia/loop-sm.mp4" data-src-hd="/media/luvia/loop-lg.mp4" aria-hidden="true"></video>
+    <span class="work__cue label">Guarda con audio</span>
+  </a>
+  <div class="work__meta">
+    <p class="label work__kind">Pubblicità · spot di prodotto</p>
+    <h3 class="work__title">Skincare</h3>
+    <p class="work__line">Una goccia, e la pelle rifiorisce.</p>
+    <p class="work__note">Progetto originale · realizzato con AI</p>
+  </div>
+</article>
+<article class="work" id="lavoro-resolare" data-family="cinema" data-aspect="16:9">
+  <a class="work__media" href="/media/resolare/film-sm.mp4" data-play="resolare" data-title="Re Solare" aria-label="Guarda Re Solare con audio">
+    <picture><source media="(min-width: 900px)" srcset="/media/resolare/poster-lg.jpg"><img class="work__poster" src="/media/resolare/poster-sm.jpg" alt="" loading="lazy" decoding="async"></picture>
+    <video class="work__loop" muted loop playsinline preload="none" data-src="/media/resolare/loop-sm.mp4" data-src-hd="/media/resolare/loop-lg.mp4" aria-hidden="true"></video>
+    <span class="work__cue label">Guarda con audio</span>
+  </a>
+  <div class="work__meta">
+    <p class="label work__kind">Cinematografico · cortometraggio</p>
+    <h3 class="work__title">Re Solare</h3>
+    <p class="work__line">Un duello in cima al mondo.</p>
+    <p class="work__note">Progetto originale · realizzato con AI</p>
+  </div>
+</article>
+<article class="work" id="lavoro-vichinghi" data-family="reel" data-aspect="9:16">
+  <a class="work__media" href="/media/vichinghi/film-sm.mp4" data-play="vichinghi" data-title="Sketch con aggancio" aria-label="Guarda Sketch con aggancio con audio">
+    <picture><source media="(min-width: 900px)" srcset="/media/vichinghi/poster-lg.jpg"><img class="work__poster" src="/media/vichinghi/poster-sm.jpg" alt="" loading="lazy" decoding="async"></picture>
+    <video class="work__loop" muted loop playsinline preload="none" data-src="/media/vichinghi/loop-sm.mp4" data-src-hd="/media/vichinghi/loop-lg.mp4" aria-hidden="true"></video>
+    <span class="work__cue label">Guarda con audio</span>
+  </a>
+  <div class="work__meta">
+    <p class="label work__kind">Reel · sketch</p>
+    <h3 class="work__title">Sketch con aggancio</h3>
+    <p class="work__line">Una signora in auto, due vichinghi sul sedile: uno sketch che porta dentro i nostri spot.</p>
+    <p class="work__note">Progetto originale · realizzato con AI</p>
+  </div>
+</article>
+<article class="work" id="lavoro-zara" data-family="reel" data-aspect="9:16">
+  <a class="work__media" href="/media/zara/film-sm.mp4" data-play="zara" data-title="Motion design che spiega" aria-label="Guarda Motion design che spiega con audio">
+    <picture><source media="(min-width: 900px)" srcset="/media/zara/poster-lg.jpg"><img class="work__poster" src="/media/zara/poster-sm.jpg" alt="" loading="lazy" decoding="async"></picture>
+    <video class="work__loop" muted loop playsinline preload="none" data-src="/media/zara/loop-sm.mp4" data-src-hd="/media/zara/loop-lg.mp4" aria-hidden="true"></video>
+    <span class="work__cue label">Guarda con audio</span>
+  </a>
+  <div class="work__meta">
+    <p class="label work__kind">Reel · motion design</p>
+    <h3 class="work__title">Motion design che spiega</h3>
+    <p class="work__line">Perché un negozio senza spot riempie la strada: la psicologia, disegnata e animata.</p>
+    <p class="work__note">Progetto originale · realizzato con AI</p>
+  </div>
+</article>
+<article class="work" id="lavoro-matita" data-family="reel" data-aspect="9:16">
+  <a class="work__media" href="/media/matita/film-sm.mp4" data-play="matita" data-title="Motion design con aggancio" aria-label="Guarda Motion design con aggancio con audio">
+    <picture><source media="(min-width: 900px)" srcset="/media/matita/poster-lg.jpg"><img class="work__poster" src="/media/matita/poster-sm.jpg" alt="" loading="lazy" decoding="async"></picture>
+    <video class="work__loop" muted loop playsinline preload="none" data-src="/media/matita/loop-sm.mp4" data-src-hd="/media/matita/loop-lg.mp4" aria-hidden="true"></video>
+    <span class="work__cue label">Guarda con audio</span>
+  </a>
+  <div class="work__meta">
+    <p class="label work__kind">Reel · motion design</p>
+    <h3 class="work__title">Motion design con aggancio</h3>
+    <p class="work__line">Un ago, una matita, e il trucco che ti tiene fermo fino alla fine.</p>
+    <p class="work__note">Progetto originale · realizzato con AI</p>
+  </div>
+</article>
+      </div>
+    </section>
+
+    <section class="servizi" id="servizi" aria-labelledby="services-title">
+      <header class="servizi__testa">
+        <p class="label">Cosa facciamo</p>
+        <h2 class="title reveal" id="services-title"><span class="line"><span>Uno studio vero.</span></span><span class="line"><span><em>Strumenti nuovi.</em></span></span></h2>
+      </header>
+      <!-- L'elenco è la sezione per chi non ha JavaScript e col movimento ridotto; sul computer diventa il foglio di produzione, sul
+           telefono le schede impilate (src/sections/servizi.ts legge testi e abbinamenti da qui: una fonte sola). I film accanto ai
+           servizi sono solo lavori che NON stanno nei titoli di testa; «Assistente digitale» ha la clip di /media/promo/ (senza audio).
+           17/11/2026: tolto «Video UGC» (la clip con l'avatar non era all'altezza); «Spot pubblicitari» ora mostra lo sketch dei
+           vichinghi, che porta dentro i nostri spot verticali. -->
+      <ol class="servizi__elenco">
+        <li class="servizi__voce" data-aspect="9:16" data-loop="/media/vichinghi/loop-sm.mp4" data-poster="/media/vichinghi/poster-sm.jpg" data-secondi="46">
+          <div class="servizi__voce-testo"><span class="label">01</span><h3>Spot pubblicitari</h3><p>Dal concept al film finito: regia, immagini, montaggio, voce e musica. Partiamo dalle foto del tuo prodotto: niente set e niente spedizioni.</p></div>
+          <a class="servizi__locandina" href="/media/vichinghi/film-sm.mp4" data-play="vichinghi" data-title="Sketch con aggancio" aria-label="Guarda Sketch con aggancio con audio"><img src="/media/vichinghi/poster-sm.jpg" alt="" loading="lazy" decoding="async"><span class="label"><b>▶</b> Sketch con aggancio</span></a>
+        </li>
+        <li class="servizi__voce" data-aspect="9:16" data-loop="/media/zara/loop-sm.mp4" data-poster="/media/zara/poster-sm.jpg" data-secondi="80">
+          <div class="servizi__voce-testo"><span class="label">02</span><h3>Contenuti social</h3><p>Reel, TikTok e post pensati per fermare il pollice. Ai clienti proponiamo serie a uscita fissa, non un video singolo.</p></div>
+          <a class="servizi__locandina" href="/media/zara/film-sm.mp4" data-play="zara" data-title="Motion design che spiega" aria-label="Guarda Motion design che spiega con audio"><img src="/media/zara/poster-sm.jpg" alt="" loading="lazy" decoding="async"><span class="label"><b>▶</b> Motion design che spiega</span></a>
+        </li>
+        <li class="servizi__voce" data-aspect="16:9" data-loop="/media/resolare/loop-sm.mp4" data-poster="/media/resolare/poster-sm.jpg" data-secondi="42">
+          <div class="servizi__voce-testo"><span class="label">03</span><h3>Siti web</h3><p>Siti veloci e curati, che raccontano il marchio come lo racconta un film.</p></div>
+          <a class="servizi__locandina" href="/media/resolare/film-sm.mp4" data-play="resolare" data-title="Re Solare" aria-label="Guarda Re Solare con audio"><img src="/media/resolare/poster-sm.jpg" alt="" loading="lazy" decoding="async"><span class="label"><b>▶</b> Re Solare</span></a>
+        </li>
+        <li class="servizi__voce" data-aspect="9:16" data-loop="/media/promo/assistente.mp4" data-poster="/media/promo/assistente.jpg">
+          <div class="servizi__voce-testo"><span class="label">04</span><h3>Assistente digitale</h3><p>Risponde ai tuoi clienti su WhatsApp e sul sito, a ogni ora, con la voce del tuo marchio.</p></div>
+          <span class="servizi__locandina servizi__locandina--muta"><img src="/media/promo/assistente.jpg" alt="" loading="lazy" decoding="async"><span class="label">Clip · senza audio</span></span>
+        </li>
+      </ol>
+      <div class="servizi__promo">
+        <p class="label servizi__promo-label">Scena · 06 — Fuori copione</p>
+        <span class="servizi__promo-luce" aria-hidden="true"></span>
+        <a class="servizi__promo-link" href="/prezzi/"><span data-promo="on">Vedi la promo di novembre</span><span data-promo="over">Vedi i pacchetti</span></a>
+        <p class="label servizi__promo-data"><span data-promo="on">Offerta a tempo · solo fino al 30 novembre</span><span data-promo="over">Promo conclusa</span></p>
+      </div>
+    </section>
+
+    <section class="contact" id="contatto" aria-labelledby="contact-title" data-mirino="Scrivici">
+      <h2 class="title reveal" id="contact-title"><span class="line"><span>Raccontaci il prodotto.</span></span></h2>
+      <p class="lead">Ti rispondiamo con un'idea.</p>
+      <div class="credits" aria-label="Titoli di coda">
+  <p class="label credits__cap">Titoli di coda</p>
+  <ol class="credits__list"><li><span class="credits__ruolo">Regia</span><span class="credits__nome">Ether Motion</span></li><li><span class="credits__ruolo">Casting</span><span class="credits__nome">Ether Motion</span></li><li><span class="credits__ruolo">Scenografia e prodotto</span><span class="credits__nome">Ether Motion</span></li><li><span class="credits__ruolo">Fotografia</span><span class="credits__nome">Ether Motion</span></li><li><span class="credits__ruolo">Montaggio</span><span class="credits__nome">Ether Motion</span></li><li><span class="credits__ruolo">Suono</span><span class="credits__nome">Ether Motion</span></li></ol>
+  <p class="credits__prod"><span class="label">Una produzione</span><b>Ether Motion</b></p>
+</div>
+<div class="ciak" aria-hidden="true"><div class="clap"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p class="label ciak__scritta">Fine riprese</p></div>
+<div class="contact__cta"><a class="button button--plain contact__btn" href="https://wa.me/393921248023" rel="noopener">Scrivici su WhatsApp</a><a class="button button--plain contact__btn" href="mailto:info@ethermotion.it">Scrivici un'email</a></div>
+<ul class="contact__icons">
+<li><a class="social" href="https://instagram.com/ethermotion.it" aria-label="Instagram" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="0.8" fill="currentColor"/></svg></a></li>
+<li><a class="social" href="https://facebook.com/122104037145505850" aria-label="Facebook" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 21v-8h2.7l.5-3.2H14V7.8c0-.9.4-1.6 1.700-1.6H17V3.400A20 20 0 0 0 14.600 3.200C12.200 3.200 10.800 4.600 10.800 7.300v2.500H8V13h2.800v8z"/></svg></a></li>
+<li><a class="social" href="https://threads.com/@ethermotion.it" aria-label="Threads" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g transform="translate(12 12) scale(1.45) translate(-12 -12.200)"><path d="M16.800 11.200c-.3-2.600-1.900-4-4.700-4-2.900 0-4.700 1.900-4.700 5s1.800 5.100 4.600 5.100c2.600 0 4.300-1.300 4.300-3.100 0-1.900-1.600-2.900-3.600-2.900-1.600 0-2.600.7-2.600 1.800 0 1 .9 1.700 2.100 1.700 1.700 0 2.600-1.300 2.600-3.800"/></g></svg></a></li>
+<li><a class="social" href="https://tiktok.com/@ether.motion" aria-label="TikTok" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3.500v10.800a3.600 3.600 0 1 1-3.600-3.600"/><path d="M14 3.500c.3 2.300 1.800 3.800 4 4"/></svg></a></li>
+</ul>
+    </section>
+  </main>
+
+  <footer class="footer"><p class="label">© 2026 Ether Motion · EtereLabs</p></footer>
+
+  <dialog class="player" id="player" aria-labelledby="player-title" data-lenis-prevent>
+    <div class="player__bar">
+      <p class="label"><span class="player__rec" aria-hidden="true"></span>In riproduzione</p>
+      <h2 class="player__title" id="player-title"></h2>
+      <button class="player__close" type="button">Chiudi</button>
+    </div>
+    <video class="player__video" controls playsinline></video>
+  </dialog>
+</body>
+</html>
