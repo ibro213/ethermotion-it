@@ -1,75 +1,25 @@
 {
-  "id": "novembre-2026",
+  "id": "primi-5-clienti",
   "stato": "auto",
-  "scadenza": "2026-11-30T23:59:59+01:00",
-  "codice": "PROMO",
-  "nome": "Promo di novembre",
+  "scadenza": null,
+  "codice": "ANTEPRIMA",
+  "nome": "Primi 5 clienti",
   "testi": {
-    "link": {
-      "attiva": "Promo novembre",
-      "conclusa": "Prezzi"
-    },
-    "linkServizi": {
-      "attiva": "Vedi la promo di novembre",
-      "conclusa": "Vedi i pacchetti"
-    },
-    "titoloPagina": {
-      "attiva": "{nome} — Ether Motion",
-      "conclusa": "Pacchetti — Ether Motion"
-    },
-    "descrizione": {
-      "attiva": "Quattro pacchetti per il tuo spot, in promo fino al {giorno}. Ne scegli uno. Scrivici {codice}.",
-      "conclusa": "Quattro pacchetti per il tuo spot. Ne scegli uno. Scrivici."
-    },
-    "campoChiude": {
-      "attiva": "{breve}",
-      "conclusa": "Conclusa"
-    },
-    "rec": {
-      "attiva": "Si gira ora",
-      "conclusa": "Scrivici"
-    },
-    "hot": {
-      "attiva": "Offerta a tempo · solo fino al {giorno}",
-      "conclusa": "Promo conclusa"
-    },
-    "titolo1": {
-      "attiva": "Il tuo spot,",
-      "conclusa": "Il tuo spot,"
-    },
-    "titolo2": {
-      "attiva": "a prezzo di lancio.",
-      "conclusa": "su misura."
-    },
-    "sotto": {
-      "attiva": "Quattro pacchetti, una sola scelta: ne prendi **uno**. Scrivici **{codice}** in DM e si parte.",
-      "conclusa": "Quattro pacchetti, una sola scelta: ne prendi **uno**. Scrivici in DM e si parte."
-    },
-    "orologio": {
-      "attiva": "Ultimo ciak tra",
-      "conclusa": "Promo conclusa"
-    },
-    "validita": {
-      "attiva": "Valida fino al {data}, ore {ora}.",
-      "conclusa": "Scrivici comunque: ti diciamo cosa possiamo fare."
-    },
-    "regola": "Un solo pacchetto a testa · Un solo formato, scelto all'inizio: 9:16, 16:9, 1:1 o 4:5",
-    "come": {
-      "attiva": "Scrivici la parola **{codice}** in DM su Instagram o su WhatsApp.",
-      "conclusa": "Scrivici in DM su Instagram o su WhatsApp."
-    },
-    "ctaTitolo": {
-      "attiva": "Scrivi _{codice}._",
-      "conclusa": "_Scrivici._"
-    },
-    "barra": {
-      "attiva": "{nome}: finisce tra",
-      "conclusa": "Promo conclusa. Scrivici comunque"
-    },
-    "barraCta": {
-      "attiva": "Scrivi {codice}",
-      "conclusa": "Scrivici"
-    }
+    "link": "Primi 5 clienti",
+    "linkServizi": "Vedi i prezzi per i primi 5 clienti",
+    "titoloPagina": "Pacchetti — Ether Motion",
+    "descrizione": "Prima vedi l'anteprima del tuo spot, poi paghi. Quattro pacchetti, con il prezzo per i primi 5 clienti. Scrivici {codice}.",
+    "campoChiude": "Ai primi 5 clienti",
+    "rec": "Si parte dalle tue foto",
+    "hot": "Prezzo per i primi 5 clienti",
+    "titolo1": "Prima l'anteprima,",
+    "titolo2": "poi paghi.",
+    "sotto": "Ci mandi le foto del prodotto. Noi prepariamo **3 immagini** e un'**anteprima di 10-15 secondi**. Se non ti convince, non ci devi niente.",
+    "regola": "Prezzi per i primi 5 clienti · Un solo pacchetto a testa · Un solo formato, scelto all'inizio: 9:16, 16:9, 1:1 o 4:5",
+    "come": "Scrivici la parola **{codice}** in DM su Instagram o su WhatsApp e mandaci le foto del prodotto.",
+    "ctaTitolo": "Scrivi _{codice}._",
+    "barra": "Anteprima prima di pagare",
+    "barraCta": "Scrivi {codice}"
   },
   "pacchetti": [
     {
@@ -109,14 +59,8 @@
       "id": "block",
       "scena": "Scena 03",
       "nome": "Blockbuster",
-      "per": {
-        "attiva": "Il più completo. Metà prezzo.",
-        "conclusa": "Il più completo."
-      },
-      "riga": {
-        "attiva": "Il più completo, a metà prezzo.",
-        "conclusa": "Il più completo."
-      },
+      "per": "Il più completo.",
+      "riga": "Il più completo.",
       "prezzo": 550,
       "listino": 1100,
       "azione": "Scelgo Blockbuster",
